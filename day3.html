@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليوم الثالث من رمضان</title>
+    <meta name="description" content="خطتك لليوم الثالث من رمضان: مواعيد الصلوات، أدعية، قراءة جزء من القرآن الكريم، التسبيح، وسماع دروس وبودكاست ديني لتعزيز روحانياتك خلال الشهر الكريم.">
+    <link rel="icon" type="image/png" href="imges/ramden.png">
+    <link rel="stylesheet" href="day_stley.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <h2>هل صليت على النبي محمد اليوم؟</h2>
+            <button class="popup-btn" onclick="closePopup()">نعم</button>
+        </div>
+    </div>
+
+    <h1>اليوم الثالث</h1>
+    <h3 class="sbt">- الإثنين 3 مارس الموافق 3 رمضان</h3>
+    <div class="container">
+        <div class="card">
+            <h2>صلاة الفجر </h2>
+            <h3>الساعة : 4:52 </h3>
+            <img src="imges/Dawn_1.png" alt="صورة صلاة الفجر - تصميم">
+            <div class="checkbox-container">
+                <label for="check21">هل صليت صلاة الفجر اليوم ؟ </label>
+                <input type="checkbox" id="check21" onchange="saveCheckboxState('check21')">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>صلاة الظهر </h2>
+            <h3>الساعة : 12:07 </h3>
+            <img src="imges/alzuhr_2.png" alt="صورة صلاة الظهر - تصميم">
+            <div class="checkbox-container">
+                <label for="check22">هل صليت صلاة الظهر اليوم ؟ </label>
+                <input type="checkbox" id="check22" onchange="saveCheckboxState('check22')">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>صلاة العصر </h2>
+            <h3>الساعة : 3:26 </h3>
+            <img src="imges/aleasr_3.png" alt="صورة صلاة العصر - تصميم">
+            <div class="checkbox-container">
+                <label for="check23">هل صليت صلاة العصر اليوم ؟ </label>
+                <input type="checkbox" id="check23" onchange="saveCheckboxState('check23')">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>صلاة المغرب </h2>
+            <h3>الساعة : 5:55 </h3>
+            <img src="imges/almaghrib_4.png" alt="صورة صلاة المغرب - تصميم">
+            <h3>صوما مقبولا وافطارا شهيا وذنبا مغفورا وعملا مقبولا ودعاءا ميسورا وعمل صالح متقبل ان شاء الله</h3>
+            <div class="checkbox-container">
+                <label for="check24">هل صليت صلاة المغرب اليوم ؟ </label>
+                <input type="checkbox" id="check24" onchange="saveCheckboxState('check24')">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>صلاة العشاء </h2>
+            <h3>الساعة : 7:13 </h3>
+            <img src="imges/aleisha_5.png" alt="صورة صلاة العشاء - تصميم">
+            <div class="checkbox-container">
+                <label for="check25">هل صليت صلاة العشاء اليوم ؟ </label>
+                <input type="checkbox" id="check25" onchange="saveCheckboxState('check25')">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>القرآن الكريم</h2>
+            <h3>قراءة الجزء الثالث</h3>
+            <img src="imges/alquran_alkarim.png" alt="">
+            <a href="https://surahquran.com/quran-search/chapter-3.html" class="watch-btn">اضغط هنا للقراءة</a>
+        
+            <div class="checkbox-container">
+                <label for="check26">هل قرأت الجزء الثالث اليوم؟</label>
+                <input type="checkbox" id="check26" onchange="saveCheckboxState('check26')">
+            </div>
+        
+            <!-- زر تحميل الجزء الأول صوتياً -->
+            <div class="download-section">
+                <a href="https://ia801601.us.archive.org/23/items/128--kb---maher--almeaqly---mp3--full--mushaf--quran--30--part/Juz03.mp3" class="download-btn" download>اضغط لتحميل الجزء الثالث كـ صوت</a>
+                <p> بصوت الشيخ ماهر المعيقلي</p>
+            </div>
+            
+            <div class="download-section">
+                <a href="https://ia801201.us.archive.org/17/items/rabieaa243724372437247247247/03.pdf" class="download-btn" download="الجزء_الثالث_من_القرآن.pdf">
+                اضغط لتحميل الجزء الثالث PDF  
+                </a>
+                <p> يمكنك قراءة الجزء الثالث بدون الحاجة إلى الاتصال بالإنترنت</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2> دعاء الإفطار</h2>
+            <h3>  عن النبي صلى الله عليه وسلم :” اللهم لك صمت وعلى زرقك أفطرت ذهب الظمأ وابتلت العروق وثبت الأجر إن شاء الله”</h3>
+        </div>
+    
+    <div class="card">
+        <h2> دعاء  اليوم</h2>
+        <h3>(اللهمَّ إني عبدُك ، و ابنُ عبدِك ، و ابنُ أَمَتِك ، ناصيتي بيدِك ، ماضٍ فيَّ حكمُك ، عدلٌ فيَّ قضاؤُك ، أسألُك بكلِّ اسمٍ هو لك سميتَ به نفسَك ، أو علَّمتَه أحدًا من خلقِك ، أو أنزلتَه في كتابِك ، أو استأثرتَ به في علمِ الغيبِ عندَك ، أن تجعلَ القرآنَ ربيعَ قلبي ، و نورَ صدري ، و جلاءَ حزني ، و ذَهابَ همِّي)</h3>
+    </div>
+    
+    <div class="card">
+        <h2> حديث  اليوم</h2>
+        <h3>قال الرّسول -صلّى الله عليه وسلّم-: (مَن كانَ يُؤْمِنُ باللَّهِ واليَومِ الآخِرِ فلا يُؤْذِ جارَهُ، ومَن كانَ يُؤْمِنُ باللَّهِ واليَومِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ، ومَن كانَ يُؤْمِنُ باللَّهِ واليَومِ الآخِرِ فَلْيَقُلْ خَيْرًا أوْ لِيَصْمُتْ)</h3>
+    </div>
+    
+    <div class="card">
+        <h2> أذكار الصباح </h2>
+        <a href="https://www.islambook.com/azkar/1/%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD" class="watch-btn"> اضغط هنا للقراءة  </a>
+        <a href="https://drive.google.com/uc?export=download&id=1h5y_LmPGyiRoA7_IE_BB3qaRQ1YpHPnJ" class="watch-btn" download> اضغط هنا لتنزيل الصورة  </a>
+        
+        <div class="checkbox-container">
+            <label for="check27"> هل قرأت أذكار الصباح اليوم؟</label>
+            <input type="checkbox" id="check27" onchange="saveCheckboxState('check27')">
+        </div>
+        
+        <h2> أذكار المساء </h2>
+        <a href="https://www.islambook.com/azkar/2/%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A1" class="watch-btn"> اضغط هنا للقراءة  </a>
+        <a href="https://drive.google.com/uc?export=download&id=1h1Z4UwSFR6qA_bVL5hyTcN6UKHnaYs7c" class="watch-btn" download>اضغط هنا لتنزيل الصورة</a>
+        
+        <div class="checkbox-container">
+            <label for="check28"> هل قرأت أذكار المساء اليوم؟</label>
+            <input type="checkbox" id="check28" onchange="saveCheckboxState('check28')">
+        </div>
+        
+        <h2> أذكار النوم </h2>
+        <a href="https://www.islambook.com/azkar/11/%D8%A3%D8%B0%D9%83%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%88%D9%85-%D9%88%D8%A7%D9%84%D8%A3%D8%AD%D9%84%D8%A7%D9%85" class="watch-btn"> اضغط هنا للقراءة  </a>
+        <a href="https://drive.google.com/uc?export=download&id=1jtUEEUMhW-wSQP_VcJuHuQW7-JF7VKKr" class="watch-btn" download>اضغط هنا لتنزيل الصورة</a>
+        
+        <div class="checkbox-container">
+            <label for="check28"> هل قرأت أذكار النوم اليوم؟</label>
+            <input type="checkbox" id="check28" onchange="saveCheckboxState('check28')">
+        </div>
+    </div>
+    
+    
+    <div class="card">
+        <h2>بودكاست اليوم </h2>
+        <h3>سلسلة تذوق العبادات - (4) الذكر | مع د. أحمد العربي </h3>
+        <img src="imges/day3_1.png" alt="سلسلة تذوق العبادات - (4) الذكر | مع د. أحمد العربي">
+        <a href="https://youtu.be/nkil1U1GxdA?si=DXxdd_cy9CPCD4eU" class="watch-btn">اضغط هنا للمشاهدة</a>
+        <div class="checkbox-container">
+            <label for="check29">هل سمعت هذا اليوم؟</label>
+            <input type="checkbox" id="check29" onchange="saveCheckboxState('check29')">
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>درس اليوم </h2>
+        <h3> السيرة النبوية -الدرس الثالث</h3>
+        <img src="imges/day3_2.png" alt="السيرة النبوية -الدرس الثالث">
+        <a href="https://youtu.be/nqpVIANGU-o?si=oJwUAGWX79dc2r_K" class="watch-btn">اضغط هنا للمشاهدة</a>
+        <div class="checkbox-container">
+            <label for="check30">هل سمعت هذا اليوم؟</label>
+            <input type="checkbox" id="check30" onchange="saveCheckboxState('check30')">
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2> إذاعة القرآن الكريم</h2>
+        <h3>بث مباشر حي</h3>
+        <img src="imges/raduo.png" alt="إذاعة القرآن الكريم">
+        <a href="radio.html" class="listen-btn">🔴 اضغط هنا</a>
+    </div>
+    
+    
+    <div class="card">
+            <p>اللهم يا ذا الجلال و الإكرام يا حي يا قيوم ندعوك باسمك الأعظم الذي إذا دعيت به أجبت، أن تبسط على والدي من بركاتك ورحمتك ورزقك.
+                اللهم ألبسه العافية حتى يهنأ بالمعيشة ، واختم له بالمغفرة حتى لا تضره الذنوب، اللهم اكفه كل هول دون الجنة حتى يُبَلِّغْه إياها. برحمتك يا أرحم الراحمين.
+                اللهم لا تجعل له ذنبا إلا غفرته ، ولا هما إلا فرجته ، ولا حاجة من حوائج الدنيا هي لك رضا وله فيها صلاح إلا قضيتها, اللهم ولا تجعل له حاجة عند أحد غيرك.</p>
+    </div>
+                    </div>
+    <div>
+    <a href="amskay.html" class="button">العودة</a>
+    </div>
+
+    <script src="day_script.js"></script>
+
+</body>
+</html>

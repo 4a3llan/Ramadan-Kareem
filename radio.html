@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إذاعة القرآن الكريم بث مباشر</title>
+    <link rel="icon" type="image/png" href="imges/ramden.png">
+    <meta name="description" content="استمع إلى إذاعة القرآن الكريم بث مباشر على مدار الساعة، وتابع التلاوات العذبة والبرامج الدينية المميزة.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+        body {
+            font-family: "Cairo", serif; 
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(imges/test1.jpg);
+            background-size: cover;
+        }
+        .radio-container {
+            background-image: url(imges/test.jpg);
+            background-size: cover;
+            
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 40px;
+        }
+        .radio-img {
+            width: 220px;
+            margin: 15px auto;
+            display: block;
+        }
+        button {
+            font-family: "Cairo", serif; 
+            background: #FFD700;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <div class="radio-container">
+        <h2> إذاعة القرآن الكريم - بث مباشر</h2>
+        <img src="imges/raduo.png" alt="راديو القرآن" class="radio-img">
+        <audio id="quran-radio" src="https://qurango.net/radio/tarateel" preload="none"></audio>
+        <button id="playPauseBtn" onclick="toggleRadio()">▶ تشغيل</button>
+    </div>
+
+    <script>
+        let radio = document.getElementById("quran-radio");
+        let playPauseBtn = document.getElementById("playPauseBtn");
+        
+        function toggleRadio() {
+            if (radio.paused) {
+                radio.play();
+                playPauseBtn.textContent = "⏸ إيقاف";
+            } else {
+                radio.pause();
+                playPauseBtn.textContent = "▶ تشغيل";
+            }
+        }
+    </script>
+</body>
+</html>

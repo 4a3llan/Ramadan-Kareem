@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل استخدام الويب سايت</title>
+    <link rel="icon" type="image/png" href="imges/ramden.png">
+    <meta name="description" content="دليل وفهرس استخدام الموقع: اكتشف كيفية تصفح الموقع بسهولة، الوصول إلى الأقسام المختلفة، والاستفادة من جميع الميزات المتاحة.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #121d33;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #2b3e50;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        .guide {
+            margin-top: 20px;
+        }
+        .step, .sub-step {
+            background: #2b3e50;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .step:hover, .sub-step:hover {
+            background: #4a6b85;
+            transform: translateY(-5px);
+        }
+        .ramadan-lights {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .step, .sub-step {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>دليل استخدام الويب سايت</h1>
+    </header>
+    <div class="ramadan-lights">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+    <section class="guide">
+        <div class="step">1. عند الدخول، سيظهر لك خيارين أساسيين:</div>
+        <div class="sub-step">- إمساكية رمضان</div>
+        <div class="sub-step">- مسبحة إلكترونية</div>
+        
+        <div class="step">2. المسبحة الإلكترونية</div>
+        <div class="sub-step">- تحتوي على 11 نوعًا من الذكر، وكل ذكر يحتوي على 1000 تسبيحة، مما يسهل عليك الذكر أثناء استخدام هاتفك.</div>
+        
+        <div class="step">3. الإمساكية والخطة اليومية</div>
+        <div class="sub-step">- عند الضغط عليها، ستجد 30 يومًا من رمضان مع خطة ختم القرآن الكريم.</div>
+        
+        <div class="step">4. عند اختيار اليوم، ستجد:</div>
+        <div class="sub-step">✔ إمساكية بمواعيد الصلوات</div>
+        <div class="sub-step">✔ خطة يومية تشمل قراءة جزء من القرآن</div>
+        <div class="sub-step">✔ قراءة الجزء بطرق مختلفة:</div>
+        <div class="sub-step">- الاستماع إلى الجزء أونلاين</div>
+        <div class="sub-step">- تحميل الجزء لقراءته لاحقًا</div>
+        <div class="sub-step">- قراءته أونلاين أو كملف PDF</div>
+        
+        <div class="step">5. محتويات يومية إضافية:</div>
+        <div class="sub-step">✔ أذكار الصباح والمساء وأذكار قبل النوم</div>
+        <div class="sub-step">✔ دعاء يومي + دعاء الإفطار</div>
+        <div class="sub-step">✔ حديث نبوي مفيد لليوم</div>
+        <div class="sub-step">✔ بودكاست ديني يناقش موضوعات مفيدة</div>
+        <div class="sub-step">✔ درس يومي عن السيرة النبوية أو موضوع ديني معين</div>
+        <div class="sub-step">✔ إذاعة القرآن الكريم بث مباشر</div>
+        
+        <div class="step">كل يوم في رمضان يحتوي على محتوى جديد ومختلف!</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسبحة الإلكترونية - رمضان كريم</title>
+    <meta name="description" content="مسبحة إلكترونية تفاعلية تساعدك على الذكر والتسبيح بسهولة خلال شهر رمضان المبارك، مع إمساكية رمضان ومهام يومية مميزة.">
+    <link rel="icon" type="image/png" href="imges/ramden.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+        body {
+            font-family: "Cairo", serif;    
+            text-align: center;
+            background-color: #f4f4f4;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in-out;
+            background-image: url(imges/test1.jpg);
+            background-size: cover;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 9999;
+        }
+        .message-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            font-size: 1.5rem;
+            max-width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .close-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            background: #218838;
+        }
+        .container {
+            margin-top: 50px;
+            animation: slideDown 1s ease-in-out;
+        }
+        .counter {
+            font-size: 2rem;
+            margin: 20px;
+        }
+        .button, .reset {
+            width: 90%;
+            max-width: 400px;
+            padding: 1px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.2s;
+        }
+        .button:hover, .reset:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            font-family: "Cairo", serif;    
+
+        }
+        .reset {
+            background-color: #dc3545;
+            color: white;
+            font-family: "Cairo", serif;    
+
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #fff;
+            padding: 50px;
+            background: #222;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <div class="message-box">
+            <p>هل صليت على سيدنا محمد ﷺ اليوم؟</p>
+            <button class="close-btn" onclick="closeOverlay()">نعم، صليت</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>مسبحة إلكترونية</h1>
+        <h2 id="dhikr">سبحان الله</h2>
+        <div class="counter" id="count">0</div>
+        <button class="button" onclick="increment()"> اضغط هنا</button>
+        <button class="reset" onclick="resetCounter()">إعادة التصفير</button>
+        <a href="index.html" class="button">العودة</a>
+    </div>
+
+    <div class="footer">اللهم اجعلها صدقةً جارية لي، ولوالدي، ولكم، ولوالديكم، ولجميع المسلمين والمسلمات، الأحياء منهم والأموات.
+        اللهم اغفر لنا ذنوبنا، وتقبل أعمالنا، وارزقنا الإخلاص والقبول.
+        اللهم اجعل لنا ولوالدينا بيوتًا في الجنة، وسُقيا من حوض نبيك محمد ﷺ، وارزقنا الفردوس الأعلى بغير حساب ولا سابقة عذاب.
+        اللهم نوّر قبور من سبقونا بالإيمان، واجعل لهم فيها روضةً من رياض الجنة، وأكرمهم بعفوك ورحمتك يا أرحم الراحمين.
+        اللهم اجعل علمنا وعملنا ونشر الخير بين الناس صدقةً جاريةً لا تنقطع، وبارك لنا في أعمارنا وأعمالنا، وأحسن ختامنا.
+        
+        اللهم آمين.</div>
+    <script>
+        function closeOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
+        let count = 0;
+        const maxCount = 1000;
+        const azkar = [
+            "سبحان الله", 
+            "الحمد لله", 
+            "لا إله إلا الله", 
+            "الله أكبر", 
+            "سبحان الله وبحمده", 
+            "سبحان الله العظيم", 
+            "استغفر الله وأتوب إليه", 
+            "لا حول ولا قوة إلا بالله", 
+            "اللهم صلِ وسلم على نبينا محمد وآله الطيبين الطاهرين", 
+            "لا إله إلا الله محمد رسول الله", 
+            "اللهم إنك عفو تحب العفو فاعف عني"
+        ];
+        let currentDhikrIndex = 0;
+        
+        function increment() {
+            if (count < maxCount) {
+                count++;
+                document.getElementById("count").innerText = count;
+                if (count === maxCount) {
+                    showCompletionMessage(azkar[currentDhikrIndex]);
+                }
+            }
+        }
+        function nextDhikr() {
+            count = 0;
+            currentDhikrIndex = (currentDhikrIndex + 1) % azkar.length;
+            document.getElementById("dhikr").innerText = azkar[currentDhikrIndex];
+            document.getElementById("count").innerText = count;
+        }
+        
+        function resetCounter() {
+            count = 0;
+            document.getElementById("count").innerText = count;
+        }
+    
+        function showCompletionMessage(dhikr) {
+            let overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            overlay.setAttribute('id', 'completionOverlay');
+            overlay.innerHTML = `
+                <div class="message-box">
+                    <p>🌟 أنت تسير في طريق الله، كل خطوة وحسنة تُكتب لك! 🌟<br>🎉 لقد أكملت ${maxCount} تسبيحة لـ ${dhikr}! 🎉<br>صلِّ على سيدنا محمد ﷺ، ليكون لك نورًا وبركة.</p>
+                    <button class="close-btn" onclick="closeCompletionMessage()">متابعة</button>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+        function closeCompletionMessage() {
+            document.getElementById('completionOverlay').remove();
+            nextDhikr();
+        }
+    </script>
+    
+</body>
+</html>
